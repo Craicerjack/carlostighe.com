@@ -1,0 +1,31 @@
+body {
+        overflow-y: hidden ! important;
+        overflow-x: hidden ! important;
+        background-color: #ffffff;
+        background-image: url('images/ct.png');
+        /*background-size: cover;*/
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    
+}
+.container {
+    height: 100%;
+}
+.spinner {
+    background-image: url('images/marv.gif');
+}
+a {
+    color: black;
+}
+.logo {
+    padding: 4em    ;
+}
+.icon {
+    padding: 2em;
+    width: 2em;
+}
+.icon i {
+    width: 100%;
+    margin-right: auto;: auto;
+}
