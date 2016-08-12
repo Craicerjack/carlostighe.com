@@ -1,14 +1,68 @@
+@font-face {
+    font-family: 'polla';
+    src: url('../../assets/polla/polla.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
         overflow-y: hidden ! important;
         overflow-x: hidden ! important;
         background-color: #ffffff;
-        background-image: url('images/ct.png');
         /*background-size: cover;*/
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center bottom;
     
 }
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+    #logo {
+        font-family: 'polla';
+        font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;
+        text-align: center;
+    }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+    #logo {
+        font-family: 'polla';
+        font-size: 6.0rem; line-height: 1.2;  letter-spacing: -.1rem;
+        text-align: center;
+    }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    #logo {
+        font-family: 'polla';
+        font-size: 10.0rem; line-height: 1.2;  letter-spacing: -.1rem;
+        text-align: center;
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    #logo {
+        font-family: 'polla';
+        font-size: 10.0rem; line-height: 1.2;  letter-spacing: -.1rem;
+        text-align: center;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    #logo {
+        font-family: 'polla';
+        font-size: 10.0rem; line-height: 1.2;  letter-spacing: -.1rem;
+        text-align: center;
+    }
+}
+
+
 .container {
     height: 100%;
 }
@@ -24,6 +78,7 @@ a {
 .icon {
     padding: 2em;
     width: 2em;
+    background: url(images/inklogo.jpg) center no-repeat;
 }
 .icon i {
     width: 100%;
