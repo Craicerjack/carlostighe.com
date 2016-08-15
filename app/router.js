@@ -6,8 +6,20 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('characters');
-  this.route('character', { path: '/character/:character_id' });
+  this.route('marvel', function() {
+    this.route('characters');
+    this.route('comics');
+    this.route('creators');
+    this.route('events');
+    this.route('series');
+    this.route('stories');
+  });
+  this.route('d3');
+  this.route('spotify');
+  this.route('star-wars');
+  this.route('nasa');
+  this.route('cycling');
+  this.route('marvel-characters');
 });
 
 export default Router;
