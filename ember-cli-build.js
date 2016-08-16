@@ -6,8 +6,7 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     // Add options here
   });
-  app.import('vendor/css/normalize.css');
-  app.import('vendor/css/skeleton.css');
+
   // Use `app.import` to add additional libraries to the generated
   // output files.
   //
