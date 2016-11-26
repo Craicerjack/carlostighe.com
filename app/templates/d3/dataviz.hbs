@@ -1,0 +1,96 @@
+<h1>DataViz</h1>
+<div class="layout-row">
+    <div class="layout-column flex-xs flex-gt-xs-25">
+    {{#paper-card as |card|}}
+        {{#card.title as |title|}}
+            {{#title.text as |text|}}
+                {{#text.headline}}D3{{/text.headline}}
+            {{/title.text}}
+            {{title.media size="sm" src="https://avatars1.githubusercontent.com/u/1562726?v=3&s=200" alt="Tomster" title="Tomster"}}
+        {{/card.title}}
+        {{#card.content}}
+            <div class="layout-column layout-align-space-around-start">
+                <div class="flex-50"><strong>Load</strong></div>
+                <div class="flex-offset-5 flex-50"><strong>Format</strong></div>
+                <div class="flex-offset-10 flex-50"><strong>Measure</strong></div>
+                <div class="flex-offset-15 flex-50"><strong>Create</strong></div>
+                <div class="flex-offset-20 flex-50"><strong>Update</strong></div>
+            </div>
+        {{/card.content}}
+    {{/paper-card}}
+    {{#paper-card as |card|}}
+        {{#card.title as |title|}}
+            {{#title.text as |text|}}
+                {{#text.headline}}D3 -> Ember{{/text.headline}}
+            {{/title.text}}
+            {{title.media size="sm" src="http://www.gravatar.com/avatar/0cf15665a9146ba852bf042b0652780a?s=200" alt="Tomster" title="Tomster"}}
+        {{/card.title}}
+        {{#card.content}}
+            <div class="layout-row"><div class="flex-50">Data</div><div class="flex-10"> -> </div> <div class="flex-40">Route</div></div>
+            <div class="layout-row"><div class="flex-50">Transforms</div><div class="flex-10"> -> </div><div class="flex-40">Controller</div></div>
+            <div class="layout-row"><div class="flex-50">Scales</div><div class="flex-10"> -> </div><div class="flex-40">Component</div></div>
+            <div class="layout-row"><div class="flex-50">Co-Ordinates</div><div class="flex-10"> -> </div><div class="flex-40">Plot Component</div></div>
+        {{/card.content}}
+    {{/paper-card}}
+    {{#paper-card as |card|}}
+            {{#card.title as |title|}}
+                {{#title.text as |text|}}
+                    {{#text.headline}}Decomposing Visualisations{{/text.headline}}
+                {{/title.text}}
+                {{title.media size="sm" src="http://www.spectro.in/images/reverse.jpg?s=200" alt="Tomster" title="Tomster"}}
+            {{/card.title}}
+            {{#card.content}}
+                <div class="layout-column layout-align-space-around-center">
+                    <div class="">What are the variable and datatypes?</div>
+                    <div class="">What are the visual encodings for each variable?</div>
+                    <div class="">To what extent are the encodings effective?</div>
+                </div>
+            {{/card.content}}
+        {{/paper-card}}
+    </div>
+    <div class="layout-column flex-xs flex-gt-xs-25">
+        {{#paper-card as |card|}}
+            {{#card.title as |title|}}
+                {{#title.text as |text|}}
+                    {{#text.headline}}Grammar of Graphics{{/text.headline}}
+                {{/title.text}}
+                {{title.media size="sm" src="http://robertoblake.com/graphics/roberto-blake-psd-graphics-design-is.jpg?s=200" alt="Tomster" title="Tomster"}}
+            {{/card.title}}
+            {{#card.content}}
+                <div class="layout-column layout-align-space-around-center">
+                    <div class="">Data</div>
+                    <div class="">Transforms</div>
+                    <div class="">Scales</div>
+                    <div class="">Co-Ordinates</div>
+                    <div class="">Elements</div>
+                    <div class="">Guides</div>
+                </div>
+            {{/card.content}}
+        {{/paper-card}}
+
+        {{#paper-card as |card|}}
+            {{#card.title as |title|}}
+                {{#title.text as |text|}}
+                    {{#text.headline}}Visual Encodings{{/text.headline}}
+                {{/title.text}}
+                {{title.media size="sm" src="https://www.safaribooksonline.com/library/view/communicating-data-with/9781449372019/images/cdwt_0106.png?s=200" alt="Tomster" title="Tomster"}}
+            {{/card.title}}
+            {{#card.content}}
+                <div class="layout-column layout-align-space-around-center">
+                    <div class="">Angle</div>
+                    <div class="">Colour Hue</div>
+                    <div class="">Colour Saturation</div>
+                    <div class="">Length</div>
+                    <div class="">Orientation</div>
+                    <div class="">Position X</div>
+                    <div class="">Position Y</div>
+                    <div class="">Shape</div>
+                    <div class="">Size</div>
+                    <div class="">Texture</div>
+                </div>
+            {{/card.content}}
+        {{/paper-card}}
+
+        
+    </div>
+</div>

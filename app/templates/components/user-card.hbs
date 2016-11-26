@@ -1,0 +1,28 @@
+{{#paper-card as |card|}}
+    {{card.image src="assets/images/avatar2.jpg" alt="Picture of yours truly" title="Carlos Tighe"}}
+    
+    <div class="layout-row layout-align-space-around-center">
+        {{#card.title as |title|}}
+            {{#title.text as |text|}}
+                {{#text.headline}}carlostighe.com{{/text.headline}}
+                {{#text.subhead}}
+                    {{paper-icon "grade"}}
+                    Programmer, Monkey Trainer, Coffee Addict 
+                {{/text.subhead}}
+            {{/title.text}}
+        {{/card.title}}
+        {{#card.actions class="layout-row layout-align-end-end" as |actions|}}
+            {{#paper-button fab=true raised=true accent=true onClick=(action "showContent")}}
+                {{paper-icon "add-" class="user-card-button"}}
+            {{/paper-button}}
+        {{/card.actions}}
+    </div>
+    {{#if contentVisible}}
+        {{#card.content}}
+            hello world
+        {{/card.content}}
+    {{/if}}
+    
+{{/paper-card}}
+
+{{yield}}
