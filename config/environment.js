@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'marvel',
+    modulePrefix: 'carlostighe',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',

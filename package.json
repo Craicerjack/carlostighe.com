@@ -1,7 +1,7 @@
 {
-  "name": "marvel",
+  "name": "carlostighe",
   "version": "0.0.0",
-  "description": "Small description for marvel goes here",
+  "description": "Ember website for me",
   "private": true,
   "directories": {
     "doc": "doc",

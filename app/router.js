@@ -15,7 +15,9 @@ Router.map(function() {
     this.route('stories');
   });
   this.route('d3');
-  this.route('spotify');
+  this.route('spotify', function() {
+    this.route('playlist', { path: '/playlist/:playlist_id' });
+  });
   this.route('star-wars');
   this.route('nasa');
   this.route('cycling');
