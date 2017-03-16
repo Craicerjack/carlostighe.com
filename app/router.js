@@ -21,7 +21,6 @@ Router.map(function() {
   this.route('star-wars');
   this.route('nasa');
   this.route('cycling');
-  this.route('marvel-characters');
 });
 
 export default Router;
