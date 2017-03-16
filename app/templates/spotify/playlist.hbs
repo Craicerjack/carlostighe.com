@@ -1,1 +1,13 @@
+{{#each model as |track| }}
+    {{#paper-item class="md-2-line"}}
+        <img src={{track.image}} alt={{track.name}} class="spot-track">
+        <div class="md-list-item-text">
+            <h3>Track: {{track.name}}</h3>
+            <p>{{track.explicit}}</p>
+            <p>Artist: {{track.artists}}</p>
+            <p>Album: {{track.album}}</p>
+        </div>
+    {{/paper-item}}
+{{/each}}
+
 {{outlet}}

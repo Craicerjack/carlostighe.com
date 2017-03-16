@@ -69,6 +69,11 @@ $warn: "red";
   }
 }
 
+.spot-track {
+  width: 64px;
+  height: 64px;
+}
+
 /*Mixin to put items on a circle
 [1] - Allows children to be absolutely positioned
 [2] - Allows the mixin to be used on a list
