@@ -1,1 +1,11 @@
-{{outlet}}
+<div class="layout-row">
+    <div class="flex-100">
+        <ul class='circle-marvel'>
+            {{#each model as |char index|}}
+                <li>{{#link-to "marvel.character" char.character_id}}<img src='{{char.src}}'>{{/link-to}}</li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+

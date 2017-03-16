@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <div class="three columns avatar">
+            <img src="{{model.thumbnail.path}}.{{model.thumbnail.extension}}" alt="">
+        </div>
+        <div class="nine columns">
+            <p>{{model.name}}</p>
+            <p>{{model.description}}</p>
+
+            {{outlet}}
+        </div>
+    </div>
+</div>

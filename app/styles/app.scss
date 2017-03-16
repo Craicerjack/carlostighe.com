@@ -28,6 +28,16 @@ $warn: "red";
   margin: auto;
 }
 
+.marvel-app header h1 {
+  font-size: 30px;
+  height: 130px;
+  text-indent: 100%;
+  background: url(../assets/images/marvelbanner.jpg) no-repeat center;
+  background-size: contain;
+  overflow: hidden;
+  margin: auto;
+}
+
 .badge {
   background-color: #1ED760;
   border-radius: 100%;
@@ -123,6 +133,30 @@ $warn: "red";
 }
 
 .circle-container img { 
+  border: solid 5px tomato;
+  background-color: white;
+  display: block; 
+  width: 100%; 
+  border-radius: 50%;
+  filter: grayscale(100%);
+
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.circle-marvel {
+  @include distribute-on-circle(12, 35em, 6em, false); 
+  margin: 5em auto 10em auto;
+  border: solid 5px tomato;
+  filter: grayscale(100%);
+  &:hover {
+    filter: grayscale(0);
+  }
+  // padding: 2em;
+}
+
+.circle-marvel img { 
   border: solid 5px tomato;
   background-color: white;
   display: block; 

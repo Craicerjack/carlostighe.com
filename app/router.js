@@ -13,6 +13,7 @@ Router.map(function() {
     this.route('events');
     this.route('series');
     this.route('stories');
+    this.route('character', { path: '/character/:character_id' });
   });
   this.route('d3');
   this.route('spotify', function() {

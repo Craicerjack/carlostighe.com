@@ -5,4 +5,11 @@ export default function(){
     this.use('toLeft'),
     this.reverse('toRight')
   );
+
+  this.transition(
+    this.fromRoute('index'),
+    this.toRoute('spotify'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
 };
