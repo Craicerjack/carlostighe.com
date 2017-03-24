@@ -1,0 +1,18 @@
+<div class="layout-row layout-wrap">
+    {{#each model as |playlist|}}
+        <div class="flex-33">
+        {{#paper-card as |card|}}
+            {{#link-to 'spotify.playlist' playlist.id}}
+                {{card.image src=playlist.image.url alt=playlist.title title=playlist.title}}
+            {{/link-to}}
+            {{#card.actions class="layout-column layout-align-space-around-stretch"}}
+                <div class="row playlist-name">
+                    {{playlist.title}}<div class="badge"><span>{{playlist.total}}</span></div>
+                </div>
+            {{/card.actions}}
+        {{/paper-card}}
+        </div>
+    {{/each}}
+</div>
+
+

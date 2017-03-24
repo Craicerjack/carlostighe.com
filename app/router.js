@@ -17,7 +17,8 @@ Router.map(function() {
   });
   this.route('d3');
   this.route('spotify', function() {
-    this.route('playlist', { path: '/playlist/:playlist_id' });
+    this.route('playlists');
+    this.route('playlist', { path: '/playlists/:playlist_id' });
   });
   this.route('star-wars');
   this.route('nasa');
@@ -25,3 +26,4 @@ Router.map(function() {
 });
 
 export default Router;
+  

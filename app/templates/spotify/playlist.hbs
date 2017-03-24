@@ -1,13 +1,24 @@
+{{#with model as |playlist|}}
+    {{playlist.name}}
+{{/with}}
 {{#each model as |track| }}
-    {{#paper-item class="md-2-line"}}
-        <img src={{track.image}} alt={{track.name}} class="spot-track">
-        <div class="md-list-item-text">
-            <h3>Track: {{track.name}}</h3>
-            <p>{{track.explicit}}</p>
-            <p>Artist: {{track.artists}}</p>
-            <p>Album: {{track.album}}</p>
-        </div>
-    {{/paper-item}}
+    {{#paper-card as |card|}}
+        {{#card.title as |title|}}
+            {{#title.text as |text|}}
+                {{#text.headline}}{{track.name}}{{/text.headline}}
+                {{#text.subhead}}{{track.artists}} - {{track.album}}{{/text.subhead}}
+            {{/title.text}}
+            {{title.media size="sm" src=track.image alt=track.name title=track.name}}
+        {{/card.title}}
+        {{#card.actions}}
+            {{#paper-button}}Action 1{{/paper-button}}
+            {{#paper-button}}Action 2{{/paper-button}}
+        {{/card.actions}}
+    {{/paper-card}}
 {{/each}}
 
 {{outlet}}
+
+
+        
+      
