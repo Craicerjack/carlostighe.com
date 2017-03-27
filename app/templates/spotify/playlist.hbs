@@ -1,23 +1,24 @@
-{{#with model as |playlist|}}
-    {{playlist.name}}
-{{/with}}
-{{#each model as |track| }}
-    {{#paper-card as |card|}}
+ <div class="row playlist-name">
+    {{model.title}}<div class="badge"><span>{{model.total}}</span></div>
+</div>
+    {{#each model.tracks as |track|}}
+        {{#paper-card as |card|}}
         {{#card.title as |title|}}
             {{#title.text as |text|}}
-                {{#text.headline}}{{track.name}}{{/text.headline}}
-                {{#text.subhead}}{{track.artists}} - {{track.album}}{{/text.subhead}}
+                {{#text.headline}}{{track.title}}{{/text.headline}}
+                {{#text.subhead}}{{track.artists}} - {{track.alname}}{{/text.subhead}}
+                {{#if track.explicit}}
+                    {{#text.subhead}}EXPLICIT{{/text.subhead}}
+                {{/if}}
             {{/title.text}}
-            {{title.media size="sm" src=track.image alt=track.name title=track.name}}
+            {{title.media size="sm" src=track.image.url alt=track.title title=track.title}}
         {{/card.title}}
         {{#card.actions}}
             {{#paper-button}}Action 1{{/paper-button}}
             {{#paper-button}}Action 2{{/paper-button}}
         {{/card.actions}}
     {{/paper-card}}
-{{/each}}
-
-{{outlet}}
+    {{/each}}
 
 
         
