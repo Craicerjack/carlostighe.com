@@ -26,4 +26,12 @@ export default function(){
     this.use('toLeft'),
     this.reverse('toRight')
   );
+
+  this.transition(
+    this.fromRoute('spotify.playlists'),
+    this.toRoute('spotify.playlist'),
+    this.use('toLeft'),
+    this.reverse('toRight')
+  );
+
 };

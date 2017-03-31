@@ -1,23 +1,23 @@
  <div class="row playlist-name">
-    {{model.title}}<div class="badge"><span>{{model.total}}</span></div>
+    {{#link-to 'spotify.playlists'}}{{model.title}}{{/link-to}}<div class="badge"><span>{{model.total}}</span></div>
+</div>
+<div class="layout-row layout-align-center">
+    <h3 class="flex-60">So it seems Spotify cant embed music the way I'd like so right now these links will just open in spotify client/window.</h3>    
 </div>
     {{#each model.tracks as |track|}}
         {{#paper-card as |card|}}
-        {{#card.title as |title|}}
-            {{#title.text as |text|}}
-                {{#text.headline}}{{track.title}}{{/text.headline}}
-                {{#text.subhead}}{{track.artists}} - {{track.alname}}{{/text.subhead}}
-                {{#if track.explicit}}
-                    {{#text.subhead}}EXPLICIT{{/text.subhead}}
-                {{/if}}
-            {{/title.text}}
-            {{title.media size="sm" src=track.image.url alt=track.title title=track.title}}
-        {{/card.title}}
-        {{#card.actions}}
-            {{#paper-button}}Action 1{{/paper-button}}
-            {{#paper-button}}Action 2{{/paper-button}}
-        {{/card.actions}}
-    {{/paper-card}}
+            {{#card.title as |title|}}
+                {{#title.text as |text|}}
+                    {{#text.headline}}{{track.title}}{{/text.headline}}
+                    {{#text.subhead}}{{track.artists}} - {{track.alname}}{{/text.subhead}}
+                    {{#if track.explicit}}
+                        {{#text.subhead}}EXPLICIT{{/text.subhead}}
+                    {{/if}}
+                    {{#text.subhead}}{{track-duration track.duration}}{{/text.subhead}}
+                {{/title.text}}
+                 {{spotify-play-button uri=track.uri }}
+            {{/card.title}}
+        {{/paper-card}}
     {{/each}}
 
 
